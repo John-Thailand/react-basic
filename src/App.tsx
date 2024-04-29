@@ -1,10 +1,18 @@
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+import TodoList from './components/TodoList';
+
+// function App() {
+//   return (
+//     <div className="App"></div>
+//   );
+// }
+
+const App: React.FC = () => {
+  const todos = [{id: 't1', text: 'TypeScriptコースの完了'}];
+  return <div className="App">
+    <TodoList items={todos}/>
+  </div>
 }
 
 export default App;
